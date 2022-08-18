@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 bevy = { version = "0.8.0", features = ["dynamic"] }
 rand = "0.8.5"
+bevy_mod_raycast = "0.6.2"
 
 [profile.dev]
 opt-level = 1
