@@ -11,10 +11,15 @@ bevy = { version = "0.8.0", features = ["dynamic"] }
 rand = "0.8.5"
 bevy_mod_raycast = "0.6.2"
 noise = "0.7.0"
+srgb = "0.3"
 
 [[bin]]
 name = "game"
 path = "src/main.rs"
+
+[[bin]]
+name = "extract"
+path = "src/bin/extract.rs"
 
 [profile.dev]
 opt-level = 1

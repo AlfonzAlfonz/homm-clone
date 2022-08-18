@@ -1,9 +1,12 @@
 mod battlefield;
 mod world;
+mod icn;
+mod bin;
 
 use battlefield::*;
 use bevy::prelude::*;
 use bevy::render::texture::ImageSettings;
+use crate::icn::IcnPlugin;
 use bevy::utils::Duration;
 use bevy::winit::WinitSettings;
 use battlefield::*;
@@ -14,8 +17,9 @@ fn main() {
   App::new()
     .insert_resource(ImageSettings::default_nearest())
     .add_plugins(DefaultPlugins)
-    .add_plugin(WorldPlugin)
+    // .add_plugin(WorldPlugin)
     // .add_plugin(BattlefieldPlugin)
+    .add_plugin(IcnPlugin)
     .add_startup_system(setup)
     .run();
 }
